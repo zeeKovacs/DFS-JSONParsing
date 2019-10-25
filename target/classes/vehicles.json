@@ -1,0 +1,21 @@
+[
+    {"category": "Vehicle","parent_category": null},
+    {"category": "Bicycle","parent_category": "Vehicle"},
+    {"category": "One-wheeled bicycle","parent_category": "Bicycle"},
+    {"category": "Two-wheeled bicycle","parent_category": "Bicycle"},
+    {"category": "Motor vehicle","parent_category": "Vehicle"},
+    {"category": "Motorcycle","parent_category": "Motor vehicle"},
+    {"category": "Car","parent_category": "Motor vehicle"},
+    {"category": "Truck","parent_category": "Motor vehicle"},
+    {"category": "Bus","parent_category": "Motor vehicle"},
+    {"category": "Aircraft","parent_category": "Vehicle"},
+    {"category": "Airplane","parent_category": "Aircraft"},
+    {"category": "Helicopter","parent_category": "Aircraft"},
+    {"category": "Spacecraft","parent_category": "Vehicle"},
+    {"category": "Railed vehicle","parent_category": "Vehicle"},
+    {"category": "Train","parent_category": "Railed vehicle"},
+    {"category": "Tram","parent_category": "Railed vehicle"},
+    {"category": "Watercraft","parent_category": "Vehicle"},
+    {"category": "Ship","parent_category": "Watercraft"},
+    {"category": "Boat","parent_category": "Watercraft"}
+]

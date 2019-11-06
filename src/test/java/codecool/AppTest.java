@@ -4,9 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class AppTest {
@@ -100,7 +98,7 @@ public class AppTest {
     }
 
     private void depthFirstSearch(List<Integer> result, int targetDepth, int currentDepth, TreeNode node) {
-        currentDepth ++;
+        currentDepth++;
         for (TreeNode child : node.getChildren()) {
             if (currentDepth == targetDepth) {
                 result.add(child.getId());
@@ -110,6 +108,44 @@ public class AppTest {
     }
 
     private List<Integer> breadthFirstSearch(int targetDepth, TreeNode node) {
-        return new ArrayList<Integer>() {{ add(4); add(5); add(6); add(7); add(8);}};
+        List<Integer> result = new ArrayList<>();
+        Queue<TreeNodeEntry> queue = new LinkedList<>();
+        queue.add(new TreeNodeEntry(node, 0));
+        while (!queue.isEmpty()) {
+            TreeNodeEntry entry = queue.remove();
+            if (entry.value == targetDepth) {
+                result.add(entry.key.getId());
+            }
+            for (TreeNode child : entry.key.getChildren()) {
+                queue.add(new TreeNodeEntry(child, entry.value + 1));
+            }
+        }
+        return result;
+    }
+
+    static class TreeNodeEntry implements Map.Entry<TreeNode, Integer> {
+
+        TreeNode key;
+        Integer value;
+
+        public TreeNodeEntry(TreeNode key, Integer value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        @Override
+        public TreeNode getKey() {
+            return key;
+        }
+
+        @Override
+        public Integer getValue() {
+            return value;
+        }
+
+        @Override
+        public Integer setValue(Integer value) {
+            throw new UnsupportedOperationException();
+        }
     }
 }

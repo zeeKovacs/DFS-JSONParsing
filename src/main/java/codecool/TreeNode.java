@@ -30,4 +30,9 @@ public class TreeNode {
     public List<TreeNode> getChildren() {
         return this.children;
     }
+
+    @Override
+    public String toString() {
+        return cat;
+    }
 }

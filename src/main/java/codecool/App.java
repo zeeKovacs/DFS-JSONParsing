@@ -13,29 +13,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class App 
-{
-    public static void main( String[] args ) throws IOException, ParseException, URISyntaxException {
+public class App {
+    public static void main(String[] args) throws IOException, ParseException, URISyntaxException {
 
-        String fileName = "vehicles.json";
         ClassLoader cl = new App().getClass().getClassLoader();
+        String fileName = "vehicles.json";
+
         File file = new File(cl.getResource(fileName).getFile());
+
         List<JSONObject> jsonObjects = myParser(file);
         List<TreeNode> nodes = treeNodeGenerator(jsonObjects);
+
         treeBuilder(nodes);
         for (TreeNode node : nodes) {
             System.out.println(node.getCat() + node.getChildren());
         }
-
     }
 
     public static List<JSONObject> myParser(File filename) throws IOException, ParseException {
 
-        List<JSONObject> myObjects = new ArrayList<>();
         JSONParser parser = new JSONParser();
         Object obj = parser.parse(new FileReader(filename));
+
+        List<JSONObject> myObjects = new ArrayList<>();
         JSONArray arr = (JSONArray) obj;
-        for (int i = 0; i < arr.size(); i ++ ) {
+
+        for (int i = 0; i < arr.size(); i++) {
             myObjects.add((JSONObject) arr.get(i));
         }
         return myObjects;

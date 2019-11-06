@@ -148,4 +148,34 @@ public class AppTest {
             throw new UnsupportedOperationException();
         }
     }
+
+    //alternative
+    /*private List<Integer> breadthFirstSearch(int targetDepth, TreeNode node) {
+        Queue queue = new LinkedList();
+        List<Integer> target = new ArrayList<>();
+        List<TreeNode> nextLevel = new ArrayList<>();
+        int depth = 0;
+
+        queue.add(node);
+
+        while(depth <= targetDepth) {
+            if (queue.isEmpty()) {
+                for (TreeNode n : nextLevel) {
+                    queue.add(n);
+                }
+                depth += 1;
+            }
+            while (!queue.isEmpty()) {
+                TreeNode currentNode = (TreeNode) queue.remove();
+                nextLevel.remove(nextLevel.indexOf(currentNode));
+                if (depth == targetDepth) {
+                    target.add(currentNode.getId());
+                }
+                for (TreeNode child : currentNode.getChildren()) {
+                    nextLevel.add(child);
+                }
+            }
+        }
+        return target;
+    }*/
 }

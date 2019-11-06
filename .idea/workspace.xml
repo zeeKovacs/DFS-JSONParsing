@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717b71c3-ba7e-4919-9ea1-8bdd9b83a0cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codecool/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codecool/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codecool/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codecool/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/codecool/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codecool/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/codecool/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/codecool/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/codecool/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/codecool/TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/codecool/AppTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/codecool/AppTest$TraversalMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/codecool/AppTest$TraversalMode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/codecool/AppTest$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/codecool/AppTest$TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/codecool/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/codecool/AppTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
